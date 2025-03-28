@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0c9c9;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background-color: #54ddbf;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer {
+    background-color: #3dc7c0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Feature Page */
+.feature-presentation {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.feature-presentation .feature-photo img {
+    width: 50%;
+}
+.feature-details {
+    width: 45%;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-card {
+    background-color: white;
+    width: 22%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.product-card img {
+    width: 100%;
+}
+.product-card h4 {
+    margin-top: 10px;
+}
+.product-card button {
+    background-color: #288ea7;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cart-aside {
+    width: 20%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .product-grid {
+        flex-direction: column;
+    }
+    .feature-presentation {
+        flex-direction: column;
+    }
+}
